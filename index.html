@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Land | Technology & Digital Solutions</title>
+    <meta name="description"
+        content="Smart Land — software solutions, digital products, AI-enabled services and technology projects.">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            navy: '#122544',
+                            blue: '#1252A7',
+                            hover: '#23549A',
+                            light: '#EBF3FF',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/svg+xml" href="assets/logo/smart-land-icon.svg">
+</head>
+
+<body class="bg-slate-50 text-slate-800 font-sans antialiased flex flex-col min-h-screen">
+
+    <!-- Navigation Bar -->
+    <header class="sticky top-0 z-40 w-full transition-all duration-300 glass-nav border-b border-slate-200/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Brand Logo -->
+            <a href="#" class="flex items-center space-x-3 group">
+                <img src="assets/logo/smart-land-icon.svg" alt="Smart Land Logo"
+                    class="h-10 w-auto group-hover:scale-105 transition-transform"
+                    onerror="this.onerror=null; this.src='assets/logo/smart-land-icon.svg';">
+            </a>
+
+            <!-- Desktop Navigation Links -->
+            <nav class="hidden md:flex items-center space-x-8 font-medium text-slate-700">
+                <a href="#home" class="hover:text-brand-blue transition-colors py-1">Home</a>
+                <a href="#projects" class="hover:text-brand-blue transition-colors py-1">Our Projects</a>
+                <a href="#video-tour" class="hover:text-brand-blue transition-colors py-1">Intro Video</a>
+                <a href="#why-us" class="hover:text-brand-blue transition-colors py-1">Solutions</a>
+                <a href="#contact" class="hover:text-brand-blue transition-colors py-1">Contact</a>
+            </nav>
+
+            <!-- Action Button & Mobile Toggle -->
+            <div class="flex items-center space-x-4">
+                <a href="#contact"
+                    class="hidden sm:inline-flex items-center px-5 py-2.5 rounded-xl bg-brand-blue text-white font-semibold text-sm hover:bg-brand-hover transition-all shadow-sm">
+                    <i class="fa-solid fa-paper-plane me-2 text-xs"></i> Get in Touch
+                </a>
+                <button id="mobileMenuBtn"
+                    class="md:hidden p-2 rounded-lg text-slate-700 hover:bg-slate-100 focus:outline-none"
+                    aria-label="Toggle Menu">
+                    <i class="fa-solid fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div id="mobileMenu" class="hidden md:hidden border-b border-slate-200 bg-white px-4 pt-2 pb-6 space-y-3">
+            <a href="#home"
+                class="mobile-link block px-3 py-2 rounded-lg text-slate-700 font-medium hover:bg-slate-50">Home</a>
+            <a href="#projects"
+                class="mobile-link block px-3 py-2 rounded-lg text-slate-700 font-medium hover:bg-slate-50">Our
+                Projects</a>
+            <a href="#video-tour"
+                class="mobile-link block px-3 py-2 rounded-lg text-slate-700 font-medium hover:bg-slate-50">Intro
+                Video</a>
+            <a href="#why-us"
+                class="mobile-link block px-3 py-2 rounded-lg text-slate-700 font-medium hover:bg-slate-50">Solutions</a>
+            <a href="#contact"
+                class="mobile-link block px-3 py-2 rounded-lg text-slate-700 font-medium hover:bg-slate-50">Contact</a>
+            <a href="#contact"
+                class="block w-full text-center px-4 py-2.5 rounded-xl bg-brand-blue text-white font-medium">Get in
+                Touch</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative pt-16 pb-24 md:pt-24 md:pb-32 bg-brand-navy text-white overflow-hidden">
+        <div
+            class="absolute inset-0 z-0 opacity-10 bg-[radial-gradient(#1252A7_1px,transparent_1px)] [background-size:16px_16px]">
+        </div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <span
+                class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-brand-blue/20 border border-brand-blue/40 text-blue-300 text-xs font-semibold tracking-wide uppercase backdrop-blur-md mb-6">
+                <i class="fa-solid fa-microchip text-xs"></i> Next-Gen Tech & Digital Products
+            </span>
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight max-w-4xl mx-auto leading-tight">
+                Building Intelligent Solutions for <span
+                    class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-teal-300">Modern
+                    Enterprises</span>
+            </h1>
+            <p class="mt-6 text-base sm:text-lg text-slate-300 max-w-2xl mx-auto font-normal">
+                We design and engineer high-performance software, AI-driven platforms, IoT systems, and cloud management
+                infrastructure.
+            </p>
+
+            <div class="mt-10 flex flex-wrap justify-center gap-4">
+                <a href="#projects"
+                    class="px-7 py-3.5 rounded-xl bg-brand-blue text-white font-bold text-sm hover:bg-brand-hover transition-all shadow-lg shadow-brand-blue/30">
+                    Explore Our Products
+                </a>
+                <a href="#video-tour"
+                    class="px-7 py-3.5 rounded-xl bg-white/10 hover:bg-white/20 text-white border border-white/20 font-bold text-sm transition-all backdrop-blur-md flex items-center gap-2">
+                    <i class="fa-solid fa-circle-play text-brand-blue"></i> Watch Video Intro
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Projects / Digital Showcase Section -->
+    <section id="projects" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+                <div>
+                    <span class="text-brand-blue font-bold text-sm uppercase tracking-wider">Innovation Portfolio</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-2">Digital Products & Systems</h2>
+                </div>
+
+                <!-- Category Filter Tabs -->
+                <div class="mt-6 md:mt-0 flex flex-wrap gap-2 bg-slate-200/60 p-1.5 rounded-2xl w-fit">
+                    <button onclick="filterCategory('all', this)"
+                        class="category-tab px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-white text-slate-900 shadow-sm transition-all">All
+                        Projects</button>
+                    <button onclick="filterCategory('AI', this)"
+                        class="category-tab px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold text-slate-600 hover:text-slate-900 transition-all">AI</button>
+                    <button onclick="filterCategory('Marketplace', this)"
+                        class="category-tab px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold text-slate-600 hover:text-slate-900 transition-all">Marketplace</button>
+                    <button onclick="filterCategory('EdTech', this)"
+                        class="category-tab px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold text-slate-600 hover:text-slate-900 transition-all">EdTech</button>
+                    <button onclick="filterCategory('E-Commerce', this)"
+                        class="category-tab px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold text-slate-600 hover:text-slate-900 transition-all">E-Commerce</button>
+                    <button onclick="filterCategory('HealthTech', this)"
+                        class="category-tab px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold text-slate-600 hover:text-slate-900 transition-all">HealthTech</button>
+                </div>
+            </div>
+
+            <!-- Dynamic Project Cards Grid -->
+            <div id="projectGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Javascript injects projects dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Intro Video Section -->
+    <section id="video-tour" class="py-20 bg-white border-y border-slate-100">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <span class="text-brand-blue font-bold text-sm uppercase tracking-wider">Discover Smart Land</span>
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-2 mb-8">Platform Introduction</h2>
+
+            <div class="relative rounded-3xl overflow-hidden shadow-2xl border border-slate-200 bg-slate-900">
+                <video controls preload="metadata" class="w-full h-auto aspect-video object-cover"
+                    poster="assets/images/welcome.webp">
+                    <source src="assets/video/smart-land-intro.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </section>
+
+    <!-- Capabilities & Features Section -->
+    <section id="why-us" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-brand-blue font-bold text-sm uppercase tracking-wider">Our Capabilities</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-2">Why Partner With Smart Land?</h2>
+                <p class="text-slate-500 mt-4 text-base">We engineered digital solutions designed for scalability,
+                    security, and high performance.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div
+                    class="p-8 rounded-3xl bg-white border border-slate-200/80 shadow-sm hover:shadow-xl transition-all duration-300 group">
+                    <div
+                        class="w-14 h-14 rounded-2xl bg-blue-50 text-brand-blue flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-brain"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">AI & Smart Automation</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">Integrated machine learning algorithms and IoT
+                        telemetry to streamline complex workflows.</p>
+                </div>
+
+                <div
+                    class="p-8 rounded-3xl bg-white border border-slate-200/80 shadow-sm hover:shadow-xl transition-all duration-300 group">
+                    <div
+                        class="w-14 h-14 rounded-2xl bg-blue-50 text-brand-blue flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">Zero-Trust Security</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">Enterprise-grade encryption, key management, and
+                        identity verification safeguards built into every layer.</p>
+                </div>
+
+                <div
+                    class="p-8 rounded-3xl bg-white border border-slate-200/80 shadow-sm hover:shadow-xl transition-all duration-300 group">
+                    <div
+                        class="w-14 h-14 rounded-2xl bg-blue-50 text-brand-blue flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-cloud"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">Cloud Infrastructure</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">Scalable cloud-native architectures ensuring
+                        99.99% uptime and high availability across distributed nodes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact" class="py-20 bg-brand-navy text-white relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <span class="text-blue-400 font-bold text-sm uppercase tracking-wider">Get In Touch</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold mt-2">Let's Build Your Next Digital Product</h2>
+                    <p class="text-slate-300 mt-4 text-base leading-relaxed">Have a project in mind or need custom
+                        software engineering? Reach out to our team of tech experts.</p>
+
+                    <div class="mt-8 space-y-6">
+                        <div class="flex items-center space-x-4">
+                            <div
+                                class="w-12 h-12 rounded-2xl bg-white/10 text-blue-400 flex items-center justify-center text-xl border border-white/10">
+                                <i class="fa-solid fa-laptop-code"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400 uppercase font-semibold">Engineering Hub</p>
+                                <p class="text-slate-200 font-medium">Smart Land HQ, Technology Park</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center space-x-4">
+                            <div
+                                class="w-12 h-12 rounded-2xl bg-white/10 text-blue-400 flex items-center justify-center text-xl border border-white/10">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400 uppercase font-semibold">Email Us</p>
+                                <p class="text-slate-200 font-medium">contact@smartland.tech</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form Card -->
+                <div class="bg-white text-slate-800 p-8 sm:p-10 rounded-3xl shadow-2xl">
+                    <h3 class="text-2xl font-bold mb-6 text-brand-navy">Send Us a Message</h3>
+                    <form onsubmit="handleContactSubmit(event)" class="space-y-4">
+                        <div>
+                            <label class="block text-xs font-bold text-slate-500 uppercase mb-1">Full Name</label>
+                            <input type="text" required placeholder="John Doe"
+                                class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-brand-blue text-sm">
+                        </div>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-bold text-slate-500 uppercase mb-1">Email</label>
+                                <input type="email" required placeholder="john@company.com"
+                                    class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-brand-blue text-sm">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold text-slate-500 uppercase mb-1">Service
+                                    Required</label>
+                                <select
+                                    class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-brand-blue text-sm">
+                                    <option>Software Engineering</option>
+                                    <option>AI & IoT Solutions</option>
+                                    <option>Cloud Architecture</option>
+                                    <option>Security Audit</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-slate-500 uppercase mb-1">Message</label>
+                            <textarea rows="4" required placeholder="Tell us about your project requirements..."
+                                class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-brand-blue text-sm"></textarea>
+                        </div>
+                        <button type="submit"
+                            class="w-full py-3.5 bg-brand-blue hover:bg-brand-hover text-white font-bold rounded-xl transition-all shadow-lg shadow-brand-blue/30">
+                            Submit Request
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 text-slate-400 py-12 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 pb-12 border-b border-slate-800">
+                <div class="space-y-4">
+                    <a href="#" class="flex items-center">
+                        <img src="assets/logo/smart-land-icon.svg" alt="Smart Land White Logo" class="h-9 w-auto"
+                            onerror="this.onerror=null; this.src='assets/logo/smart-land-icon.svg';">
+                    </a>
+                    <p class="text-sm text-slate-400">Technology solutions, digital products, and AI-enabled services
+                        built for modern organizations.</p>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-bold text-sm uppercase mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#home" class="hover:text-white transition-colors">Home</a></li>
+                        <li><a href="#projects" class="hover:text-white transition-colors">Our Projects</a></li>
+                        <li><a href="#video-tour" class="hover:text-white transition-colors">Video Intro</a></li>
+                        <li><a href="#why-us" class="hover:text-white transition-colors">Solutions</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-bold text-sm uppercase mb-4">Legal</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" onclick="openToast('Privacy Policy modal')"
+                                class="hover:text-white transition-colors">Privacy Policy</a></li>
+                        <li><a href="#" onclick="openToast('Terms of Service modal')"
+                                class="hover:text-white transition-colors">Terms of Service</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-bold text-sm uppercase mb-4">Newsletter</h4>
+                    <p class="text-sm mb-3">Stay updated with our latest digital product releases.</p>
+                    <form onsubmit="handleNewsletter(event)" class="flex gap-2">
+                        <input type="email" required placeholder="Your business email"
+                            class="bg-slate-900 border border-slate-700 px-3 py-2 rounded-lg text-sm text-white w-full focus:outline-none focus:ring-1 focus:ring-brand-blue">
+                        <button type="submit"
+                            class="bg-brand-blue hover:bg-brand-hover px-4 py-2 rounded-lg text-white font-semibold text-sm transition-all">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs space-y-4 sm:space-y-0">
+                <p>&copy; 2026 Smart Land. All rights reserved.</p>
+                <div class="flex space-x-4">
+                    <a href="#" class="hover:text-white text-lg"><i class="fa-brands fa-github"></i></a>
+                    <a href="#" class="hover:text-white text-lg"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#" class="hover:text-white text-lg"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Project Details Modal -->
+    <div id="projectModal"
+        class="fixed inset-0 z-50 hidden modal-blur bg-slate-900/70 flex items-center justify-center p-4 sm:p-6">
+        <div
+            class="bg-white w-full max-w-3xl rounded-3xl overflow-hidden shadow-2xl transform transition-all relative max-h-[90vh] flex flex-col">
+            <button onclick="closeModal()"
+                class="absolute top-4 right-4 z-10 w-10 h-10 rounded-full bg-white/80 hover:bg-white text-slate-800 flex items-center justify-center shadow-md transition-all">
+                <i class="fa-solid fa-xmark text-lg"></i>
+            </button>
+            <div id="modalContent" class="overflow-y-auto p-6 sm:p-8 space-y-6">
+                <!-- Injected dynamically via JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Notification Toast -->
+    <div id="toast"
+        class="fixed bottom-6 right-6 z-50 hidden bg-brand-navy text-white px-5 py-3 rounded-2xl shadow-2xl border border-slate-700 flex items-center space-x-3 transition-all duration-300">
+        <i class="fa-solid fa-circle-check text-blue-400"></i>
+        <span id="toastMsg" class="text-sm font-medium">Notification</span>
+    </div>
+
+    <script src="js/script.js" defer></script>
+</body>
+
+</html>

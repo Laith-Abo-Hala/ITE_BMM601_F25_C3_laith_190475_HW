@@ -1,0 +1,46 @@
+:root {
+    --color-navy: #122544;
+    --color-blue: #1252A7;
+    --color-blue-hover: #23549A;
+    --color-bg: #ffffff;
+}
+
+body {
+    color: var(--color-navy);
+    background-color: var(--color-bg);
+}
+
+a {
+    color: var(--color-blue);
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: var(--color-blue-hover);
+}
+
+.glass-nav {
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(12px);
+}
+
+.modal-blur {
+    backdrop-filter: blur(8px);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+img {
+    max-width: 100%;
+}
+
+img[loading="lazy"] {
+    content-visibility: auto;
+}
+
+:focus-visible {
+    outline: 3px solid rgba(18, 82, 167, 0.55);
+    outline-offset: 3px;
+}
